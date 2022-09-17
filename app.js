@@ -100,7 +100,7 @@ app.use((error, req, res, next) => {
 
 })
 
-mongoose.connect('mongodb+srv://Orero:orero2002@cluster0.zf1ulpl.mongodb.net/graphqlblog?retryWrites=true&w=majority')
+mongoose.connect('MONGODBURL')
 .then(result => {
     app.listen(8080)  
 }).catch(error => {
